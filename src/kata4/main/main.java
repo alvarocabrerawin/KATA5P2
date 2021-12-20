@@ -1,6 +1,6 @@
 package kata4.main;
 
-
+import java.sql.SQLException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
@@ -10,10 +10,12 @@ import java.util.logging.Logger;
 import kata4.view.HistogramDisplay;
 import kata4.view.MailHistogramBuilder;
 import kata4.view.MailListReader;
+import kata4.view.MailListReaderBD;
 import kata4.model.Mail;
 
 public class main {
-    public static void main(String args[]) throws IOException{
+   
+     public static void main(String args[]) throws IOException{
         
         main mainc = new main();
         mainc.control();
@@ -45,5 +47,3 @@ public class main {
     }
     
 }   
-    
-
